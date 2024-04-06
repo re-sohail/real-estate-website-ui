@@ -13,6 +13,21 @@
 <body>
 
     <div class="buy-conatiner">
+        <div class="menu">
+            <div class="menu-container">
+                <h1><a href="index.html"><i class="ri-home-5-line"></i> Home</a></h1>
+                <h1><a href="Sell.html"><i class="ri-hotel-line"></i> Sell Property</a></h1>
+                <h1><a href="Rent.html"><i class="ri-building-2-line"></i> Rent Property</a></h1>
+                <h1><a href="Buy.html"><i class="ri-building-line"></i> Buy Property</a></h1>
+                <h1><a href="Service.html"><i class="ri-service-line"></i> Service</a></h1>
+                <h1><a href="Contact.html"><i class="ri-customer-service-line"></i> Contact us</a></h1>
+                <div class="login-menu">
+                    <a href="Login.html">Login</a>
+                    <a href="Registor.html">Register</a>
+                </div>
+                <div class="menu-arrow"></div>
+            </div>
+        </div>
         <!-- Navbar -->
         <div class="nav">
             <a href="index.html"><img src="img/logo.png"></a>
@@ -716,13 +731,11 @@
         menuIcon.addEventListener('click', () => {
             if (menu.style.display === 'block') {
                 menu.style.opacity = '0';
-                menuIcon.style.color = 'black'
                 setTimeout(() => {
                     menu.style.display = 'none';
                 }, 300);
             } else {
                 menu.style.display = 'block';
-                menuIcon.style.color = 'white'
                 setTimeout(() => {
                     menu.style.opacity = '1';
                 }, 10);
