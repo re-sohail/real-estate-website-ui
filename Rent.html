@@ -706,6 +706,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let menu = document.querySelector('.menu');
+        let menuIcon = document.querySelector('.menu-icon');
+
+        menuIcon.addEventListener('click', () => {
+            if (menu.style.display === 'block') {
+                menu.style.opacity = '0';
+                menuIcon.style.color = 'black'
+                setTimeout(() => {
+                    menu.style.display = 'none';
+                }, 300);
+            } else {
+                menu.style.display = 'block';
+                menuIcon.style.color = 'white'
+                setTimeout(() => {
+                    menu.style.opacity = '1';
+                }, 10);
+            }
+        });
+    </script>
 </body>
 
 </html>
